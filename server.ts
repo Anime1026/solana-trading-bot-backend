@@ -11,7 +11,7 @@ app.use(bodyParser.json({ type: "application/json" }));
 app.use(bodyParser.raw({ type: "application/vnd.custom-type" }));
 app.use(bodyParser.text({ type: "text/html" }));
 app.use("/api", router);
-const port = process.env.PORT || 443;
+const port = process.env.PORT || 3306;
 
 try {
     app.listen(port, () => {
